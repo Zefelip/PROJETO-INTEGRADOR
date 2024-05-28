@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="title">
+        <h1>Sobrevidas ACS</h1>
+        <div id="logout">
+            <a href="#">Sair</a>
+        </div>
+        <div id="profissional">
+            <h3>Nome do Profissional</h3>
+            <p>Profissional da Saúde</p>
+        </div>
+    </header>
+    <nav class="barra-lateral">
+        <div class="versao">
+            <h3>Número da Versão</h3>
+        </div>
+        <div class="home">
+            <h2>Home</h2>
+        </div>
+        <div class="dashboard">
+            <p>Dashboard</p>
+        </div>
+        <div class="cadastro">
+            <h2>Cadastros</h2>
+        </div>
+        <div class="paciente">
+            <a href="#">Adicionar Paciente</a>
+        </div>
+        <div class="monitorar">
+            <h2>Monitoramento</h2>
+            <ul>
+                <li><a href="#">Pacientes Encaminhados</a></li>
+                <li><a href="#">Pacientes Absenteístas</a></li>
+                <li><a href="#">Pacientes Cadastrados</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="principal">
+        <div class="form">
+            <input type="text" list="microrregioes" name="microrregiao" placeholder="Selecione a Microrregião">
+            <datalist id="microrregioes">
+                <option value="Microrregião 1"></option>
+                <option value="Microrregião 2"></option>
+                <option value="Microrregião 3"></option>
+                <option value="Microrregião 4"></option>
+                <option value="Microrregião 5"></option>
+                <option value="Microrregião 6"></option>
+                <option value="Microrregião 7"></option>
+            </datalist>
+        </div>
+        <div class="paciente-cadastrado">
+            <p>Pacientes Cadastrados</p>
+        </div>
+        <div class="paciente-encaminhado">
+            <p>Pacientes Encaminhados</p>
+        </div>
+        <div class="paciente-absenteista">
+            <p>Pacientes Absenteístas</p>
+        </div>
+        <div class="qntd-cadastrado">Null</div>
+        <div class="qntd-encaminhado">Null</div>
+        <div class="qntd-absenteista">Null</div>
+        <div class="mapa">
+            <h2>Mapa dos Pacientes Cadastrados</h2>
+            <img src="img/mapagoiania.webp" alt="Mapa de Goiânia" class="logo">
+        </div>
+        <div class="fator-risco">
+            <h2>Pacientes por Fator de Risco</h2>
+            <div class="idade">
+                <h4>Homem &gt; 40 anos</h4>
+                <p>Null</p>
+            </div>
+            <div class="elitista">
+                <h4>Elitista</h4>
+                <p>Null</p>
+            </div>
+            <div class="fumante">
+                <h4>Tabagista</h4>
+                <p>Null</p>
+            </div>
+            <div class="lesao">
+                <h4>Lesão Suspeita</h4>
+                <p>Null</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
